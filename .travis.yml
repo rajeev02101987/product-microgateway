@@ -1,8 +1,8 @@
 arch: 
     - arm64
     - amd64
-    
-apt-get install maven
+before_install:    
+    - sudo apt-get -y install maven
 language: java
 dist: trusty
 # Skip install phase to avoid unwanted mvn build
