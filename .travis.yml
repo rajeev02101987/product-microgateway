@@ -5,8 +5,8 @@ before_install:
     - sudo apt-get -y install maven
 instal:
     - if [ "${TRAVIS_CPU_ARCH}" == "arm64" ]; then
-         sudo apt-get install openjdk-11-jdk;
-         export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64;
+         sudo apt-get install openjdk-8-jdk;
+         export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64;
          export PATH=$JAVA_HOME:$PATH;
       fi
 language: java
