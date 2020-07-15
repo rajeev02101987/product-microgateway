@@ -1,6 +1,6 @@
 dist: trusty
 arch: 
-    - arm64
+    - amd64
 before_install:    
     - sudo apt-get -y install maven
 
