@@ -14,7 +14,7 @@ dist: trusty
 jobs:
   include:
     - stage: test
-      jdk: oraclejdk8
+      jdk: openjdk8
       script: 
         - mvn clean install -B -V | grep -e "\[ERROR\]" -e Maven -e "// Start Running" -e "Building"; test ${PIPESTATUS[0]} -eq 0;
 cache:
